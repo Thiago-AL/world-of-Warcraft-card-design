@@ -1,0 +1,762 @@
+body {
+  font-family: "Outfit", sans-serif;
+  background-image: url(../imagens/fundo-wow5.jpg);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  backdrop-filter: blur(4px);
+}
+.cabecalho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding-top: 50px;
+}
+
+.cabecalho .titulo {
+  color: rgb(#f1ecff);
+  font-size: 30px;
+}
+
+.cabecalho .icone-wow {
+  width: 50px;
+  height: 50px;
+}
+
+.slider-wow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 60px 0;
+}
+
+.cards-wow {
+  width: 360px;
+  height: 560px;
+  position: relative;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.btn-seta {
+  background-color: #fff;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  border: 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.btn-seta.btn-voltar {
+  transform: rotateY(180deg);
+}
+
+.btn-seta:hover {
+  background-color: #8351fe;
+}
+
+.cartao-wow {
+  opacity: 0;
+  background-color: blueviolet;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition:  opacity 0.3s ease-in-out;
+  
+}
+.cartao-wow.selecionado {
+  opacity: 1;
+  z-index: 1;
+}
+
+.fundo-bruxo {
+  background-image: url(../imagens/bruxo-fundo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fundo-paladino {
+  background-image: url(../imagens/fundo-paladino.jpg);
+  background-repeat: no-repeat;
+}
+.fundo-guerreiro {
+  background-image: url(../imagens/fundo-guerreiro.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.fundo-mago {
+  background-image: url(../imagens/fundo-mage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fundo-sacerdote {
+  background-image: url(../imagens/fundo-sacerdote.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fundo-arqueiro {
+  background-image: url(../imagens/fundo-arqueiro.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fundo-ladino {
+  background-image: url(../imagens/fundo-ladino.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fundo-druida {
+  background-image: url(../imagens/fundo-druida.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fundo-xama {
+  background-image: url(../imagens/fundo-xama.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fundo-dk {
+  background-image: url(../imagens/fundo-dk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fundo-monge {
+  background-image: url(../imagens/fundo-monge.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fundo-dh {
+  background-image: url(../imagens/fundo-dh.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cartao-wow .info-bruxo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.cartao-wow .info-bruxo .tito-bruxo {
+  background-image: url(../icons/icon-bruxo.png);
+  color: #f1ecff;
+  font-size: 20px;
+  background: no-repeat;
+}
+.cartao-wow .info-bruxo .spec-bruxo {
+  background-color: #333;
+  color: #f1ecff;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+.img-bruxo {
+  text-align: center;
+}
+
+.cartao-wow .imagem-bruxo {
+  max-width: 100%;
+  max-height: 259px;
+  padding: 20px;
+}
+.cartao-wow .desc-bruxo {
+  background: rgb(238, 240, 240, 0.8);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.cartao-wow .desc-bruxo .tito-bruxo {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  font-size: 15px;
+  padding: 12px;
+}
+
+.cartao-wow .text-bruxo {
+  color: #f1ecff;
+  font-size: 14px;
+  padding: 12px;
+  text-align: justify;
+  max-height: 105px;
+  overflow-y: auto;
+}
+/* Inicio estilo cartao pala*/
+.cartao-wow .info-pala {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.cartao-wow .info-pala .tito-pala {
+  background-image: url(../icons/icon-pala.png);
+  color: #f1ecff;
+  font-size: 20px;
+  background: no-repeat;
+}
+.cartao-wow .info-pala .spec-pala {
+  background-color: #333;
+  color: #f1ecff;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+.img-pala {
+  text-align: center;
+}
+
+.cartao-wow .imagem-pala {
+  max-width: 100%;
+  max-height: 225px;
+  padding: 20px;
+}
+.cartao-wow .desc-pala {
+  background: rgb(238, 240, 240, 0.8);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.cartao-wow .desc-pala .titulo-pala {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  font-size: 15px;
+  padding: 12px;
+}
+
+.cartao-wow .text-pala {
+  color: #f1ecff;
+  font-size: 14px;
+  padding: 12px;
+  text-align: justify;
+  max-height: 105px;
+  overflow-y: auto;
+}
+
+/* Inicio estilo cartao guerreiro*/
+
+.cartao-wow .info-guerreiro {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.cartao-wow .info-guerreiro .tito-guerreiro {
+  background-image: url(../icons/icon-pala.png);
+  color: #f1ecff;
+  font-size: 20px;
+  background: no-repeat;
+}
+.cartao-wow .info-guerreiro .spec-guerreiro {
+  background-color: #333;
+  color: #f1ecff;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+.img-guerreiro {
+  text-align: center;
+}
+
+.cartao-wow .imagem-guerreiro {
+  max-width: 100%;
+  max-height: 259px;
+  padding: 20px;
+}
+.cartao-wow .desc-guerreiro {
+  background: rgb(238, 240, 240, 0.8);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.cartao-wow .desc-guerreiro .tito-guerreiro {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  font-size: 15px;
+  padding: 12px;
+}
+
+.cartao-wow .text-guerreiro {
+  color: #f1ecff;
+  font-size: 14px;
+  padding: 12px;
+  text-align: justify;
+  max-height: 105px;
+  overflow-y: auto;
+}
+/* Inicio estilo cartao mage*/
+
+.cartao-wow .info-mago {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.cartao-wow .info-mago .tito-mago {
+  background-image: url(../icons/icon-mage.png);
+  color: #f1ecff;
+  font-size: 20px;
+  background: no-repeat;
+}
+.cartao-wow .info-mago .spec-mago {
+  background-color: #333;
+  color: #f1ecff;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+.img-mago {
+  text-align: center;
+}
+
+.cartao-wow .imagem-mago {
+  max-width: 100%;
+  max-height: 259px;
+  padding: 20px;
+}
+.cartao-wow .desc-mago {
+  background: rgb(238, 240, 240, 0.8);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.cartao-wow .desc-mago .tito-mago {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  font-size: 15px;
+  padding: 12px;
+}
+
+.cartao-wow .text-mago {
+  color: #f1ecff;
+  font-size: 14px;
+  padding: 12px;
+  text-align: justify;
+  max-height: 105px;
+  overflow-y: auto;
+}
+/* Inicio estilo cartao sacerdpte*/
+
+.cartao-wow .info-sacer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.cartao-wow .info-sacer .tito-sacer {
+  background-image: url(../icons/icon-sarcer.png);
+  color: #f1ecff;
+  font-size: 20px;
+  background: no-repeat;
+}
+.cartao-wow .info-sacer .spec-sacer {
+  background-color: #333;
+  color: #f1ecff;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+.img-sacer {
+  text-align: center;
+}
+
+.cartao-wow .imagem-sacer {
+  max-width: 100%;
+  max-height: 259px;
+  padding: 20px;
+}
+.cartao-wow .desc-sacer {
+  background: rgb(238, 240, 240, 0.8);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.cartao-wow .desc-sacer .tito-sacer {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  font-size: 15px;
+  padding: 12px;
+}
+
+.cartao-wow .text-sacer {
+  color: #f1ecff;
+  font-size: 14px;
+  padding: 12px;
+  text-align: justify;
+  max-height: 105px;
+  overflow-y: auto;
+}
+/* Inicio estilo cartao HUNTER*/
+
+.cartao-wow .info-arqueiro {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.cartao-wow .info-arqueiro .tito-arqueiro {
+  background-image: url(../icons/icon-sarcer.png);
+  color: #f1ecff;
+  font-size: 20px;
+  background: no-repeat;
+}
+.cartao-wow .info-arqueiro .spec-arqueiro {
+  background-color: #333;
+  color: #f1ecff;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+.img-arqueiro {
+  text-align: center;
+}
+
+.cartao-wow .imagem-arqueiro {
+  max-width: 100%;
+  max-height: 259px;
+  padding: 20px;
+}
+.cartao-wow .desc-arqueiro {
+  background: rgb(238, 240, 240, 0.8);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.cartao-wow .desc-arqueiro .tito-arqueiro {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  font-size: 15px;
+  padding: 12px;
+}
+
+.cartao-wow .text-arqueiro {
+  color: #f1ecff;
+  font-size: 14px;
+  padding: 12px;
+  text-align: justify;
+  max-height: 105px;
+  overflow-y: auto;
+}
+/* Inicio estilo cartao Ladino*/
+
+.cartao-wow .info-ladino {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.cartao-wow .info-ladino .tito-ladino {
+  background-image: url(../icons/icon-rogue.png);
+  color: #f1ecff;
+  font-size: 20px;
+  background: no-repeat;
+}
+.cartao-wow .info-ladino .spec-ladino {
+  background-color: #333;
+  color: #f1ecff;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+.img-ladino {
+  text-align: center;
+}
+
+.cartao-wow .imagem-ladino {
+  max-width: 100%;
+  max-height: 259px;
+  padding: 20px;
+}
+.cartao-wow .desc-ladino {
+  background: rgb(238, 240, 240, 0.8);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.cartao-wow .desc-ladino .tito-ladino {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  font-size: 15px;
+  padding: 12px;
+}
+
+.cartao-wow .text-ladino {
+  color: #f1ecff;
+  font-size: 14px;
+  padding: 12px;
+  text-align: justify;
+  max-height: 105px;
+  overflow-y: auto;
+}
+/* Inicio estilo cartao DRUIDA*/
+
+.cartao-wow .info-druida {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.cartao-wow .info-druida .tito-druida {
+  background-image: url(../icons/icon-druid.png);
+  color: #f1ecff;
+  font-size: 20px;
+  background: no-repeat;
+}
+.cartao-wow .info-druida .spec-druida {
+  background-color: #333;
+  color: #f1ecff;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+.img-druida {
+  text-align: center;
+}
+
+.cartao-wow .imagem-druida {
+  max-width: 100%;
+  max-height: 259px;
+  padding: 20px;
+}
+.cartao-wow .desc-druida {
+  background: rgb(238, 240, 240, 0.8);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.cartao-wow .desc-druida .tito-druida {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  font-size: 15px;
+  padding: 12px;
+}
+
+.cartao-wow .text-druida {
+  color: #f1ecff;
+  font-size: 14px;
+  padding: 12px;
+  text-align: justify;
+  max-height: 105px;
+  overflow-y: auto;
+}
+
+/* Inicio estilo cartao XAMA*/
+.cartao-wow .info-xama {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.cartao-wow .info-xama .tito-xama {
+  background-image: url(../icons/icon-xama.png);
+  color: #f1ecff;
+  font-size: 20px;
+  background: no-repeat;
+}
+.cartao-wow .info-xama .spec-xama {
+  background-color: #333;
+  color: #f1ecff;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+.img-xama {
+  text-align: center;
+}
+
+.cartao-wow .imagem-xama {
+  max-width: 100%;
+  max-height: 259px;
+  padding: 20px;
+}
+.cartao-wow .desc-xama {
+  background: rgb(238, 240, 240, 0.8);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.cartao-wow .desc-xama .tito-xama {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  font-size: 15px;
+  padding: 12px;
+}
+
+.cartao-wow .text-xama {
+  color: #f1ecff;
+  font-size: 14px;
+  padding: 12px;
+  text-align: justify;
+  max-height: 105px;
+  overflow-y: auto;
+}
+
+/* Inicio estilo cartao dk*/
+.cartao-wow .info-dk {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.cartao-wow .info-dk .tito-dk {
+  background-image: url(../icons/icon-dh.png);
+  color: #f1ecff;
+  font-size: 18px;
+  background: no-repeat;
+}
+.cartao-wow .info-dk .spec-dk {
+  background-color: #333;
+  color: #f1ecff;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+.img-dk {
+  text-align: center;
+}
+
+.cartao-wow .imagem-dk {
+  max-width: 100%;
+  max-height: 259px;
+  padding: 5px;
+}
+.cartao-wow .desc-dk {
+  background: rgb(238, 240, 240, 0.8);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.cartao-wow .desc-dk .tito-dk {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  font-size: 15px;
+  padding: 12px;
+}
+
+.cartao-wow .text-dk {
+  color: #f1ecff;
+  font-size: 14px;
+  padding: 12px;
+  text-align: justify;
+  max-height: 105px;
+  overflow-y: auto;
+}
+/* Inicio estilo cartao monge*/
+.cartao-wow .info-monge {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.cartao-wow .info-monge .tito-monge {
+  background-image: url(../icons/icon-monge.png);
+  color: #f1ecff;
+  font-size: 20px;
+  background: no-repeat;
+}
+.cartao-wow .info-monge .spec-monge {
+  background-color: #333;
+  color: #f1ecff;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+.img-monge {
+  text-align: center;
+}
+
+.cartao-wow .imagem-monge {
+  max-width: 100%;
+  max-height: 259px;
+  padding: 20px;
+}
+.cartao-wow .desc-monge {
+  background: rgb(238, 240, 240, 0.8);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.cartao-wow .desc-monge .tito-monge {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  font-size: 15px;
+  padding: 12px;
+}
+
+.cartao-wow .text-monge {
+  color: #f1ecff;
+  font-size: 14px;
+  padding: 12px;
+  text-align: justify;
+  max-height: 105px;
+  overflow-y: auto;
+}
+/* Inicio estilo cartao dh*/
+.cartao-wow .info-dh {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.cartao-wow .info-dh .tito-dh {
+  background-image: url(../icons/icon-dh.png);
+  color: #f1ecff;
+  font-size: 20px;
+  background: no-repeat;
+}
+.cartao-wow .info-dh .spec-dh {
+  background-color: #333;
+  color: #f1ecff;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+.img-dh {
+  text-align: center;
+}
+
+.cartao-wow .imagem-dh {
+  max-width: 100%;
+  max-height: 260px;
+  padding: 20px;
+}
+.cartao-wow .desc-dh {
+  background: rgb(238, 240, 240, 0.8);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.cartao-wow .desc-dh .tito-dh {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  font-size: 15px;
+  padding: 12px;
+}
+
+.cartao-wow .text-dh {
+  color: #f1ecff;
+  font-size: 14px;
+  padding: 12px;
+  text-align: justify;
+  max-height: 80px;
+  overflow-y: auto;
+}
+
+.cartao-wow .img-icon {
+  width: 100px;
+  height: 100px;
+}

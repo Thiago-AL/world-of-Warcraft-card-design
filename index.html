@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto WOW Slider</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/responsivo.css">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+    <header class="cabecalho"> 
+      
+      <img src="src/imagens/simbolo-wow.png" alt="fundo-site" class="icone-wow">
+
+      <hi class="titulo"> 
+        <b> World of Warcraft Cards</b>
+      </hi>
+       
+       
+    </header>
+    
+   <main class="slider-wow">
+
+    <button class="btn-seta btn-voltar" id="btn-voltar">
+      <img src="src/imagens/seta.png" alt="seta voltar" />
+    </button>
+
+    
+    <ul class="cards-wow">
+ 
+      <!--CARTAO BRUXO-->
+      <li class="cartao-wow bruxo-wow fundo-bruxo selecionado ">
+        <div class="info-bruxo">
+          <h2 class="tito-bruxo">
+            Bruxo
+            <img src="src/icons/icon-bruxo.png" class="img-icon" />
+          </h2>
+          <p class="spec-bruxo">
+            Especializações<br>
+            Destruição: Dano a distância <br>
+            Demonologia: Dano a distância <br>
+            Suplício: Dano a distância</p>
+        </div>
+        <div class="img-bruxo">
+          <img src="src/imagens/bruxo.png" alt="bruxo" class="imagem-bruxo" /> 
+        </div>
+        <div class="descricao-bruxo">
+          <h2 class="desc-bruxo"> Descrição</h2>
+          <p class="text-bruxo"> 
+            Essa é a classe responsável por reunir todos do grupo para enfrentar algum mal antigo e terrível. Falando assim parece até importante, né? Mas a real é que a galera gosta de ter um bruxo para usar o Ritual de Evocação, e puxar os atrasildos para a atividade. Brincadeiras a parte, Bruxo é outra classe que faz uso de Ajudantes, sendo que no caso deles, evocações demoníacas. Esses ajudantes tem algumas funções que ajudam melhor em determinadas situações. A classe também possui a Pedra da Alma, que é sempre de uma ajuda incrível durante a batalha quando alguém do grupo morre.
+          </p>
+        </div>
+
+        <!--CARTAO PALA-->
+      <li class="cartao-wow paladino-wow fundo-paladino ">
+          <div class="info-pala">
+            <h2 class="tito-pala">
+              Paladino
+              
+            </h2>
+            <p class="spec-pala">
+              Especializações<br>
+              Sagrado: Cura<br>
+              Proteção: Tanque<br>
+              Retribuição: Dano corpo a corpo</p>
+          </div>
+  
+          <div class="img-pala">            
+            <img src="src/imagens/paladino.png"  alt="paladino" class="imagem-bruxo" srcset="">
+
+          </div>
+
+          <div class="descricao-pala">
+            <h3 class="desc-pala"> Descrição</h3>
+            <p class="text-pala">
+              Uma das classes híbridas que podem navegar entre os 3 tipos de especializações, permitindo você ter uma experiência maior do jogo. Fazem uso de várias Bênçãos para se proteger e proteger aliados de danos. Possui Impor das Mãos e Escudo Divino, que são duas habilidades bem marcadas que sempre salvam vidas. Além disso tudo, é uma classe de brilhos!  
+            </p>
+          </div>
+          <!--CARTAO GUERREIRO-->
+        <li class="cartao-wow guerreiro-wow fundo-guerreiro ">
+            <div class="info-guerreiro">
+              <h2 class="tito-guerreiro">
+              Guerreiro
+              <img src="src/icons/icon-guerreiro.png" class="img-icon" />
+            </h2>
+              <p class="spec-guerreiro">
+                Especializações<br>
+                Armas: Dano corpo a corpo
+                Fúria: Dano corpo a corpo
+                Proteção: Tanque
+              </p>
+            </div>
+    
+            <div class="img-guerreiro">
+              <img src="src/imagens/guerreiro.png" alt="guerreiro" class="imagem-guerreiro" srcset="">
+            </div>
+            <div class="descricao-guerreiro">
+              <h2 class="desc-guerreiro"> Descrição</h2>
+              <p class="text-guerreiro" >
+                Essa é a classe para o povo casca grossa e raiz, uma das classes com mais habilidades para ser gerenciadas. Algumas das habilidades mais marcantes dessa classe são a Investida e Salto Heroico. O recurso utilizado pelos guerreiros é a Raiva, que é gerada e gasta de acordo com os seus ataques. Uma das grandes vantagens de jogar com essa classe é a sua habilidade de equipar qualquer arma do jogo, exceto Varinhas. Isso é um grande adianto quando você resolver farmar transmogs de armas. 
+              </p>
+            </div>
+
+            <!--CARTAO MAGE-->
+         <li class="cartao-wow mago-wow fundo-mago ">
+            <div class="info-mago">
+              <h2 class="tito-mago">
+                Mago
+                <img src="src/icons/icon-mage.png" class="img-icon" />
+              </h2>
+              <p class="spec-mago">
+                Especializações<br>
+                Arcano: Dano a distância
+                Fogo: Dano a distância<br>
+                Gélido: Dano a distância
+              </p>
+            </div>
+    
+            <div class="img-mago">
+              <img src="src/imagens/mago.png" width="259px" alt="mago" class="imagem-mago" srcset="">
+            </div>
+            <div class="descricao-mago">
+              <h3 class="desc-mago"> Descrição</h3>
+              <p class="text-mago">
+                Mago é aquele tipo de classe cheia das artimanhas, sabe? Na especialização Gélido você pode conjurar um ajudante para ficar ao seu lado nas lutas. Tem  algumas habilidades bem divertidas, sendo uma das marcas deles a Polimorfia, que possui diversas variantes na qual você pode transformar seu oponente e que podem ser aprendidas. Também conhecido como criadores de Portais, o que facilita horrores a sua movimentação pelo mundo, tem também a capacidade de Conjurador de Refeições, além de que na hora da batalha, podem dar uma força no grupo com a sua Distorção Temporal. Jogar de mago é uma opção bem divertida.
+              </p>
+            </div>
+            <!--CARTAO SACER-->
+         <li class="cartao-wow sacerdote-wow fundo-sacerdote ">
+              <div class="info-sacer">
+                <h2 class="tito-sacer">
+                  Sacerdote
+                  <img src="src/icons/icon-sarcer.png" class="img-icon" />
+                </h2>
+                <p class="spec-sacer">
+                  Especializações<br>
+                  Sagrado: Cura<br>
+                  Disciplina: Cura<br>
+                  Sombras: Dano a distância
+                </p>
+              </div>
+      
+              <div class="img-sacer">
+                <img src="src/imagens/sacerdote.png"  alt="sacerdote" class="imagem-sacer" srcset="">
+              </div>
+              <div class="descricao-sacer">
+                <h3 class="desc-sacer"> Descrição</h3>
+                <p class="text-sacer">
+                  A vida de Sacerdotes é bem cheia durante uma batalha, com fortes habilidades de curas, a classe também se sai muito bem no quesito dano. Assim como o mago, possui a habilidade de Levitar, que salva vidas de pessoas desatentas com altura. Possui a capacidade de Controle Mental, que pode ser um recurso bacana em algumas lutas. Alguns Sacerdotes também são conhecidos por sua carência e constante uso do Salto de Fé, para terem seus companheiros de aventuras juntinho de si e não sobre aquele fogo feioso.
+                </p>
+              </div>
+              <!--CARTAO ARQUEIRO-->
+         <li class="cartao-wow arqueiro-wow fundo-arqueiro ">
+            <div class="info-arqueiro">
+              <h2 class="tito-arqueiro">
+                Arqueiro
+                <img src="src/icons/icon-hunter.png" class="img-icon" />
+              </h2>
+              <p class="spec-arqueiro">
+                Especializações<br>
+                Domínio das Feras: Dano a distância<br>
+                Precisão: Dano a distância<br>
+                Sobrevivência: Dano corpo a corpo
+              </p>
+            </div>
+    
+            <div class="img-arqueiro">
+              <img src="src/imagens/hunter.png" alt="caçador" class="imagem-arqueiro" srcset="">
+            </div>
+            <div class="descricao-arqueiro">
+              <h3 class="desc-arqueiro"> Descrição</h3>
+              <p class="text-arqueiro">
+                Classe dedicada a quem gosta de aventuras em boa companhia, pois apesar de ser uma das classes com ajudantes, ela é a única com a opção de Domar feras e ter novos tipos de ajudantes. Você pode escolher vários tipos de ajudantes ao longo do jogo. Possui duas habilidades ímpares que sempre ajuda a fugir de problemas, Redirecionar e Fingir de Morto. Também possui um bom arsenal de armadilhas para controle de inimigos. Uma habilidade ícone de caçadores é a sua capacidade de Rastrear diversos tipos de criaturas no minimapa.
+              </p>
+            </div>
+          <!--CARTAO LADINO-->        
+         <li class="cartao-wow ladino-wow fundo-ladino ">
+              <div class="info-ladino">
+                <h2 class="tito-ladimno" >
+                  Ladino
+                  <img src="src/icons/icon-rogue.png" class="img-icon" />
+                </h2>
+                <p class="spec-ladino">
+                  Especializações<br>
+                  Assassinato: Dano corpo a corpo <br>
+                  Fora da Lei: Dano corpo a corpo<br>
+                  Subterfúgio: Dano corpo a corpo
+                </p>
+              </div>
+      
+              <div class="img-ladino">
+                <img src="src/imagens/ladino.png"  alt="ladino" class="imagem-ladino" srcset="">
+              </div>
+              <div class="descricao-ladino">
+                <h3 class="desc-ladino"> Descrição</h3>
+                <p class="text-ladino">
+                  Uma classe bem bacana para jogar em grupo, e até facil. Mas que na hora de jogar sozinho, pode precisar de um pouco mais de paciência e atenção no que você pretende fazer. Possuem a incrível habilidade Furtividade, que permite você se locomover perto de inimigos sem que notem sua presença. Isso acompanhado de Aturdir são marcas bem presentes nessa classe, assim como o som característico quando um Ladino passa se esgueirando ao seu redor. Também possuem a capacidade de fugir no meio de uma luta, usando o Sumir. Possuem habilidades de Abrir Fechaduras, propiciando ótimos saques de baús e cofres extras. Por falar em lucros extras, você pode fazer uso de sua invisibilidade e Bater Carteiras por aí.
+                </p>
+              </div>
+              <!--CARTAO DRUIDA-->
+         <li class="cartao-wow druida-wow fundo-druida ">
+                <div class="info-druida">
+                  <h2 class="tito-druida">
+                    Druida
+                    <img src="src/icons/icon-druid.png" class="img-icon" />
+                  </h2>
+                  <p class="spec-druida">
+                    Especializações<br> 
+                    Equilíbrio: Dano a distancia<br>
+                    Feral: Dano corpo a corpo<br>
+                    Guardião: Tanque<br>
+                    Restauração: Cura
+                  </p>
+                </div>
+        
+                <div class="img-druida">
+                  <img src="src/imagens/druida.png" class="imagem-druida" alt="druida" srcset="">
+                </div>
+                <div class="descricao-druida">
+                  <h3 class="desc-druida"> Descrição</h3>
+                  <p class="text-druida">
+                    Classe amorzinho do coração para quem gosta de ficar mudando de formas. Também é uma classe híbrida capaz de navegar pelos 3 tipos de especialização. Sendo que possuem 4 delas, pois a parte de dano é dividida entre corpo a corpo e a distância. Possui profunda afinidade com a natureza e isso proporciona algumas habilidades bem práticas, como acessar portais para vários pontos específicos de Azeroth, através do Caminhar No Sonho. Além das formas que você tem dentro das suas especializações, há também as Formas de Viagem, que podem variar de acordo com o local. 
+                  </p>
+                </div>      
+                <!--CARTAO XAMA-->
+           <li class="cartao-wow xama-wow fundo-xama ">
+                  <div class="info-xama">
+                    <h2 class="tito-xama" >
+                      Xamãs
+                      <img src="src/icons/icon-xama.png" class="img-icon" />
+                    </h2>
+                    <p class="spec-xama">
+                      Especializações <br>
+                      Elemental: Dano a distancia<br>
+                      Aperfeiçoamento: Dano corpo a corpo<br>
+                      Restauração: Cura</p>
+                  </div>
+          
+                  <div class="img-xama">
+                    <img src="src/imagens/xama.png"  class="imagem-xama" alt="xama" srcset="">
+                  </div>
+                  <div class="descricao-xama">
+                    <h3 class="desc-xama"> Descrição</h3>
+                    <p class="text-xama">
+                      Poderosos conjuradores de totens que proporcionam vantagens extras durante a luta, Xamãs tem uma habilidade legal que lhe dá uma segunda habilidade de regressar para o seu ponto seguro. Também possui uma habilidade especial única de Reencarnar logo após alguma morte, seja em batalha ou fora dela. Tem habilidade de Andar sobre a Água, que pode ser muito útil em um momento de fuga, ou muito zoeira, dependendo do seu espírito suíno. Possui uma habilidade de virar um Lobo Fantasma e com isso se mover mais rapidamente. É uma classe marcada pela habilidade Sede de Sangue ou Heroísmo, que dá um super gás extra durante batalhas. Assim como Magos, tem uma habilidade de transformar inimigos em criaturinhas inofensivas por um período de tempo.
+                    </p>
+                  </div>   
+                 <!--CARTAO DK--> 
+            <li class="cartao-wow dk-wow fundo-dk ">
+                    <div class="info-dk">
+                      <h2 class="tito-dk">
+                        Cavaleiros da Morte<br>
+                        <img src="src/icons/icon-dk.png" class="img-icon" />
+                      </h2>
+                      <p class="spec-dk">
+                        Especializações<br>
+                        Sangue: Tanque <br>
+                        Gélido: Dano corpo a corpo<br>
+                        Profano: Dano corpo a corpo
+                       </p>
+                    </div>
+            
+                    <div class="img-dk">
+                      <img src="src/imagens/cavaleiro-da-morte.png"  alt="cavaleiro-da-morte" class="imagem-dk" srcset=""></div>
+                    <div class="descricao-dk">
+                      <h3 class="desc-dk"> Descrição</h3>
+                      <p class="text-dk">
+                        Cavaleiro da Morte é classe queridinha por ter estreitos laços com o Lich Rei. Com a chegada de Shadowlands, todas as raças poderam ser criadas nessa classe. Possui uma habilidade única de Forjar Runas em suas armas, aumentando seus poderes de acordo com a runa escolhida. Entre suas demais habilidades, podemos destacar a Reviver Aliado, que é de grande ajuda durante uma luta quando seu amiguinho não viu aquela poça de ácido embaixo dele. E com a Garra da Morte, pode puxar para perto de si, aquele inimigo safado que estava tentando fugir da luta. A especialização Profano é capaz de conjurar um ajudante para lutar ao seu lado, além de possuir um Exército dos Mortos, que é uma parada muito divertida de ver em ação em uma luta. Pela sua história, é uma classe que já começa com uns níveis a frente das demais. 
+                      </p>
+                    </div>  
+                    <!--CARTAO MONGE-->
+            <li class="cartao-wow monge-wow fundo-monge ">
+                      <div class="info-monge">
+                        <h2 class="tito-monge">
+                          Monge
+                          <img src="src/icons/icon-monge.png" class="img-icon" />
+                        </h2>
+                        <p class="spec-monge">
+                          Especializações<br>                          
+                          Mestre Cervejeiro: Tanque
+                          Tecelão da Névoa: Cura
+                          Andarilho do Vento: Dano corpo a corpo</p>
+                      </div>
+              
+                      <div class="img-monge">
+                        <img src="src/imagens/monge.png" alt="monge" class="imagem-monge" srcset="">
+                      </div>
+                      <div class="descricao-monge">
+                        <h3 class="desc-monge"> Descrição</h3>
+                        <p class="text-monge">
+                          Eles rolam. Basicamente isso. Você não vai querer fazer outra coisa que não seja sair no Rolamento por aí ao invés de correr e andar. Possui um esquema muito particular em que é preciso equilibrar muito suas habilidades para conseguir um bom desempenho nas suas especializações. Possui duas habilidades chamadas Transcendência e Transcendência: Transferência que permitem uma movimentação ótima dentro de uma pequena área. Uma particularidade da classe é que ela possui pequenas missões que você pode fazer enquanto está upando sua personagem e lhe concedem Iluminação, que aumenta o seu ganho de experiência. (essa última informação precisa ser confirmada para Shadowlands)
+                        </p>
+                      </div>  
+                      <!--CARTAO DH-->
+            <li class="cartao-wow dh-wow fundo-dh ">
+                        <div class="info-dh">
+                          <h2 class="tito-dh">
+                            Caçadores de Demônios
+                            <img src="src/icons/icon-dh.png" class="img-icon" />
+                          </h2>
+                          <p class="spec-dh">
+                            Especializações 
+                            Devastação: Dano corpo a corpo<br>
+                            Vingança: Tanque</p>
+                        </div>
+                
+                        <div class="img-dh">
+                          <img src="src/imagens/demon-hunter.png" alt="Caçador de Demonios" class="imagem-dh" srcset=""></div>
+                        <div class="descricao-dh">
+                          <h3 class="desc-dh"> Descrição</h3>
+                          <p class="text-dh">
+                            É uma classe que pela sua história acaba sendo limitada em apenas duas opções de raças que podem escolhê-la. É também uma classe com esquema de especialização diferente, pois possui apenas duas. Porém é uma classe com um desempenho enorme no quesito movimentação. Possui uma habilidade única de Planar quando está caindo e que acaba sendo sempre ótimo. Também pela sua história, é uma classe que já começa com alguns níveis a frente das demais.
+                          </p>
+                        </div>  
+      
+       </li> 
+    </ul>
+  
+    <button class="btn-seta" id="btn-avancar">
+      <img src="src/imagens/seta.png" alt="seta avançar" />
+    </button>
+
+  </main">   
+  <script src="src/js/index.js"></script>
+</body>
+</html>

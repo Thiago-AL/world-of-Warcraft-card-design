@@ -1,0 +1,38 @@
+@media (max-width: 620px) {
+
+
+    .slider-wow {
+        padding: 0 15px;
+        gap: 20px;
+    }
+
+    .btn-seta {
+        width: 20px;
+        height: 20px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        
+    }
+
+    .cards-wow{
+        height: 560px;
+    }
+
+    .cartao .imagem-bruxo {
+        max-height: 320px;
+        align-items: center;
+        display: flex;
+    }
+
+    .cartao-wow .infor-bruxo .tito-bruxo {
+        max-width: 50%;
+        font-size: 18px;
+    }
+
+    .cartao .info-bruxo .spec-bruxo {
+        font-size: 14px;
+    }
+}
